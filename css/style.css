@@ -199,40 +199,24 @@ h3 {
   line-height: 1.6;
   margin-bottom: 1em;
 }
-table#project-table {
-  border-collapse: collapse; 
-  width: 100%;
-  margin: 20px auto;
+table.table-example{
+  border: 5px solid purple;
+  border-collapse: collapse;
+  margin: auto;
 }
-
-table#project-table th,
-table#project-table td {
-  border: 1px solid burlywood;
+table.table-example td,
+table.table-example th{
+  border: 1px burlywood solid;
   padding: 10px;
-  text-align: left;
 }
-
-
-table#project-table tbody tr:nth-child(odd) {
+table.table-example td:nth-child(3){
+  text-align: center;
+  color: brown;
+  font-weight: bold;
+}
+table.table-example tbody tr:nth-child(odd){
   background-color: mediumslateblue;
 }
-
-table#project-table tbody tr:nth-child(even) {
-  background-color: lightsteelblue;
-}
-
-
-table#project-table td:first-child,
-table#project-table th:first-child {
-  font-weight: bold;
-  background-color: lightyellow;
-}
-
-
-table#project-table tr:last-child {
-  background-color: peachpuff;
-}
-
 
 #contact-form {
   background-color: cornflowerblue;
@@ -242,12 +226,22 @@ table#project-table tr:last-child {
   border-radius: 20px;
 }
 
+#contact-form select
+  {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid blue
+}
+
+
 
 #contact-form input[type="text"],
 #contact-form input[type="email"],
-#contact-form select,
 #contact-form textarea {
-  width: 100%;
+  width: 382px;
   padding: 8px;
   margin-top: 10px;
   margin-bottom: 10px;
